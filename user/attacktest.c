@@ -97,6 +97,7 @@ main(int argc, char *argv[])
         printf("FAIL; read failed; no secret\n");
         exit(1);
       }
+      printf ("%s ---- %s\n", secret, output);
       if(strcmp(secret, output) == 0) {
         printf("OK: secret is %s\n", output);
       } else {
